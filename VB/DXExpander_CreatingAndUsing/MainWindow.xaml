@@ -1,0 +1,41 @@
+﻿<Window x:Class="DXExpander_CreatingAndUsing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="clr-namespace:DevExpress.Xpf.Core;assembly=DevExpress.Xpf.Core.v10.2"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        Title="Using DXExpander" Height="400" Width="600">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="1" Content="..." Click="Button_Click" />
+        <dx:DXExpander x:Name="expander" Grid.Column="2" FlowDirection="LeftToRight"
+                       VerticalExpand="None" HorizontalExpand="FromLeftToRight"
+                       IsExpanded="False">
+                <GroupBox Header="Application Theme:" VerticalAlignment="Center"
+                          Margin="5,0,5,0">
+                    <StackPanel>
+                        <RadioButton x:Name="rbAzure" Content="Deep Blue"
+                                     Checked="rbAzure_Checked" Margin="0,5,0,2" />
+                        <RadioButton x:Name="rbGray" Content="Light Gray"
+                                     Checked="rbGray_Checked" Margin="0,2,0,2" />
+                        <RadioButton x:Name="rbOfficeBlack" Content="Office 2007 Black"
+                                     Checked="rbOfficeBlack_Checked" Margin="0,2,0,2" />
+                        <RadioButton x:Name="rbOfficeBlue" Content="Office 2007 Blue"
+                                     Checked="rbOfficeBlue_Checked" IsChecked="True" 
+                                     Margin="0,2,0,2" />
+                        <RadioButton x:Name="rbOfficeSilver" Content="Office 2007 Silver"
+                                     Checked="rbOfficeSilver_Checked" Margin="0,2,0,0" />
+                    </StackPanel>
+                </GroupBox>
+        </dx:DXExpander>
+        <dxg:GridControl x:Name="gridControl1" AutoPopulateColumns="True">
+            <dxg:GridControl.View>
+                <dxg:TableView />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
