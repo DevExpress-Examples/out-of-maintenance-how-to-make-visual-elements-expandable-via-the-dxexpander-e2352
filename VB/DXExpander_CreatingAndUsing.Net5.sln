@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXExpander_CreatingAndUsing", "DXExpander_CreatingAndUsing\DXExpander_CreatingAndUsing.vbproj", "{A652870D-49DD-4D55-A0AF-9EC8873A3E15}"
+# Visual Studio 16
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXExpander_CreatingAndUsing", "DXExpander_CreatingAndUsing\DXExpander_CreatingAndUsing.Net5.vbproj", "{A652870D-49DD-4D55-A0AF-9EC8873A3E15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
